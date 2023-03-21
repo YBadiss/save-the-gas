@@ -1,38 +1,140 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: black;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.title {
   color: white;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.App-link {
-  color: #61dafb;
+.gas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  gap: 1rem; /* Add this line to create space between child elements */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hourly-salary-form {
+  margin-top: 1rem; /* Add this line to create space between the Gas Amount and Hourly Salary forms */
+}
+
+@media screen and (max-width: 600px) {
+  .box-container {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .box-container {
+    flex-direction: column;
+    align-items: center;
   }
+}
+
+.box {
+  flex: 1;
+  min-width: 200px; /* Adjust this value based on your desired minimum width */
+  max-width: 300px; /* Adjust this value based on your desired maximum width */
+  height: 250px;
+  background-color: lightgrey;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.calls-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.saved-amount {
+  font-size: 1.2rem;
+}
+
+.hours-title {
+  font-size: 1.2rem;
+}
+
+
+.gas-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center; /* Add this line to horizontally align the content */
+}
+
+
+.gas-price p {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.gas-price img {
+  width: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 0 2px lightgrey;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  max-width: 75px;
+}
+
+.coingecko-ref {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: gray;
+  text-align: center;
+}
+
+.accent {
+  color: #224aff; /* Change this to your desired color */
 }

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Save The Gas",
+  "name": "Understand if gas saving is worth it",
   "icons": [
     {
       "src": "favicon.ico",

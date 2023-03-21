@@ -7,6 +7,10 @@
   justify-content: center;
 }
 
+body {
+  color: lightgrey;
+}
+
 .title {
   color: white;
   font-size: 5rem;
@@ -58,7 +62,7 @@
   min-width: 200px; /* Adjust this value based on your desired minimum width */
   max-width: 300px; /* Adjust this value based on your desired maximum width */
   height: 250px;
-  background-color: lightgrey;
+  background-color: rgb(62, 62, 62);
   margin: 0 1rem;
   padding: 1rem;
   border-radius: 10px;
@@ -122,7 +126,7 @@ input {
   font-size: 1.2rem;
   border-radius: 5px;
   border: none;
-  box-shadow: 0 0 0 2px lightgrey;
+  box-shadow: 0 0 0 2px rgb(255, 221, 154);
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   max-width: 75px;
@@ -136,5 +140,15 @@ input {
 }
 
 .accent {
-  color: #224aff; /* Change this to your desired color */
+  color: #ff9c22; /* Change this to your desired color */
+  font-weight: bold;
+}
+
+.intro-text {
+  text-align: center;
+  text-justify: inter-word;
+  max-width: 900px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }

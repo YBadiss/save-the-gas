@@ -144,6 +144,15 @@ function App() {
   return (
     <div className="App">
       <h1 className="title">Save The Gas</h1>
+      <p className="intro-text">
+        I have been learning Solidity lately and everyone ever talks about is <span className="accent">saving gas</span>, see the new <a href="https://eips.ethereum.org/EIPS/eip-3855" target="_blank" rel="noopener noreferrer">PUSH0</a> instruction.
+        <br />
+        <br />
+        But when I hear "we save 1 gas at runtime!" it does not mean much to me, so I wanted to <span className="accent">measure the $$$ impact</span>.
+        <br />
+        <br />
+        Also, as is the current trend, I used ChatGPT to generate the code of this page because I am rubbish at Javascript and React. So if it's bad, you can't completely blame me.
+      </p>
       <div className="gas-container">
         <GasPrice gasPrice={gasPrice} />
         <GasAmount setGasAmount={setGasAmount} />
